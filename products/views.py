@@ -1,4 +1,6 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect, reverse
+from django.contrib import messages
+from django.db.models import Q
 from .models import Produce
 
 
@@ -6,6 +8,16 @@ def all_produce(request):
     ''' A view for all produce and search queries'''
 
     products = Produce.objects.all()
+    query = None
+
+    if 'q' in request.GET:
+        query = request.GET['q']
+        if not query:
+            messages.error(request, "Please enter a search term!")
+            return redirect(reverse('products'))
+
+        queries = Q(name__icontains=query)
+        products = products.filter(queries)
 
     context = {
         'products':  products,
