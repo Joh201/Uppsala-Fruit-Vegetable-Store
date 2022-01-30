@@ -4,6 +4,8 @@ from django.db.models import Q
 from .models import Produce
 
 # adopted and modified from course material
+
+
 def all_produce(request):
     ''' A view for all produce and search queries'''
 
@@ -16,7 +18,6 @@ def all_produce(request):
         if 'category' in request.GET:
             categories = request.GET['category'].split(',')
             products = products.filter(category__name__in=categories)
-
 
         if 'q' in request.GET:
             query = request.GET['q']
