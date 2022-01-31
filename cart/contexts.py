@@ -6,6 +6,7 @@ from products.models import Produce
 
 
 def cart_contents(request):
+    ''' Function for displaying cart contents'''
 
     cart_items = []
     total = 0
