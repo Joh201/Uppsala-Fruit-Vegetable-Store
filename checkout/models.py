@@ -1,3 +1,4 @@
+# adopted and modified from course material
 import uuid
 
 from django.db import models
