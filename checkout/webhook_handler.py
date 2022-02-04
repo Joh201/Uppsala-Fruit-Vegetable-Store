@@ -76,7 +76,7 @@ class StripeWH_Handler:
                         phone_number=shipping_details.phone,
                         postcode=shipping_details.address.postal_code,
                         town_or_city=shipping_details.address.city,
-                        street_address1=shipping_details.address.line1,
+                        street_address=shipping_details.address.line1,
                         country=shipping_details.address.country,
                         original_cart=cart,
                         stripe_pid=pid,
