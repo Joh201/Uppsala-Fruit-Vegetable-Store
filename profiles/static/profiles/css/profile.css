@@ -1,5 +1,10 @@
 
 /* adopted and modified from course material */
+
+.order-history {
+    max-height: 416px;
+    overflow-y: auto;
+}
 #profile-update-form .form-control {
     color: #000;
 }

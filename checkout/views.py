@@ -7,6 +7,8 @@ from django.conf import settings
 from .forms import OrderForm
 from .models import Order, OrderLineItem
 from products.models import Produce
+from profiles.models import UserProfile
+from profiles.forms import UserProfileForm
 from cart.contexts import cart_contents
 
 import stripe
@@ -95,20 +97,37 @@ def checkout(request):
         intent = stripe.PaymentIntent.create(
                 amount=stripe_total,
                 currency=settings.STRIPE_CURRENCY,
-            )
+        )
 
-        if not stripe_public_key:
-            messages.warning(request, 'Stripe public key is missing')
+        if request.user.is_authenticated:
+            try:
+                profile = UserProfile.objects.get(user=request.user)
+                order_form = OrderForm(initial={
+                    'full_name': profile.user.get_full_name(),
+                    'email': profile.user.email,
+                    'phone_number': profile.phone_number,
+                    'street_address': profile.street_address,
+                    'town_or_city': profile.town_or_city,
+                    'postcode': profile.postcode,
+                    'country': profile.country,
+                })
+            except UserProfile.DoesNotExist:
+                order_form = OrderForm()
+        else:
+            order_form = OrderForm()
 
-        order_form = OrderForm()
-        template = 'checkout/checkout.html'
-        context = {
-            'order_form': order_form,
-            'stripe_public_key': stripe_public_key,
-            'client_secret': intent.client_secret,
-        }
+    if not stripe_public_key:
+        messages.warning(request, 'Stripe public key is missing')
 
-        return render(request, template, context)
+    order_form = OrderForm()
+    template = 'checkout/checkout.html'
+    context = {
+        'order_form': order_form,
+        'stripe_public_key': stripe_public_key,
+        'client_secret': intent.client_secret,
+    }
+
+    return render(request, template, context)
 
 
 def checkout_success(request, order_number):
@@ -117,6 +136,26 @@ def checkout_success(request, order_number):
 
     save_info = request.session.get('save_info')
     order = get_object_or_404(Order, order_number=order_number)
+
+    if request.user.is_authenticated:
+        profile = UserProfile.objects.get(user=request.user)
+        # Attach the user's profile to the order
+        order.user_profile = profile
+        order.save()
+
+        # Save the user's info
+        if save_info:
+            profile_data = {
+                'phone_number': order.phone_number,
+                'street_address': order.street_address,
+                'town_or_city': order.town_or_city,
+                'postcode': order.postcode,
+                'country': order.country,
+            }
+            user_profile_form = UserProfileForm(profile_data, instance=profile)
+            if user_profile_form.is_valid():
+                user_profile_form.save()
+
     messages.success(request, f'Order successfully processed! \
         Your order number is {order_number}. A confirmation \
         email will be sent to {order.email}.')
