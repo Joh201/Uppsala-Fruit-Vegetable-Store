@@ -17,7 +17,7 @@ class UserProfile(models.Model):
     street_address = models.CharField(max_length=80, null=True, blank=True)
     town_or_city = models.CharField(max_length=40, null=True, blank=True)
     postcode = models.CharField(max_length=20, null=True, blank=True)
-    country = CountryField(blank_label='Country *', null=True, blank=True)
+    country = CountryField(blank_label='Country', null=True, blank=True)
 
     def __str__(self):
         return self.user.username

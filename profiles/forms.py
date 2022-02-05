@@ -1,13 +1,16 @@
 # adopted and modified from course material
 from django import forms
-from .models import Order
+from .models import UserProfile
 
 
-class OrderForm(forms.ModelForm):
+class UserProfileForm(forms.ModelForm):
+
+    ''' User profile form'''
+
     class Meta:
-        model = Order
-        fields = ('full_name', 'email', 'phone_number',
-                  'street_address', 'town_or_city', 'postcode', 'country',)
+        ''' Helper class'''
+        model = UserProfile
+        exclude = ('user',)
 
     def __init__(self, *args, **kwargs):
         '''
@@ -16,16 +19,13 @@ class OrderForm(forms.ModelForm):
         '''
         super().__init__(*args, **kwargs)
         placeholders = {
-            'full_name': 'Full Name',
-            'email': 'Email Address',
             'phone_number': 'Phone Number',
             'postcode': 'Postal Code',
             'town_or_city': 'Town or City',
             'street_address': 'Street Address ',
-            # 'country': 'Country',
         }
 
-        self.fields['full_name'].widget.attrs['autofocus'] = True
+        self.fields['phone_number'].widget.attrs['autofocus'] = True
         for field in self.fields:
             if field != 'country':
                 if self.fields[field].required:
