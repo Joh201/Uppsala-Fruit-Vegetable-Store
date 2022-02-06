@@ -101,6 +101,7 @@ def checkout(request):
 
         if request.user.is_authenticated:
             try:
+
                 profile = UserProfile.objects.get(user=request.user)
                 order_form = OrderForm(initial={
                     'full_name': profile.user.get_full_name(),
@@ -112,6 +113,7 @@ def checkout(request):
                     'country': profile.country,
                 })
             except UserProfile.DoesNotExist:
+
                 order_form = OrderForm()
         else:
             order_form = OrderForm()
@@ -119,7 +121,7 @@ def checkout(request):
     if not stripe_public_key:
         messages.warning(request, 'Stripe public key is missing')
 
-    order_form = OrderForm()
+
     template = 'checkout/checkout.html'
     context = {
         'order_form': order_form,
