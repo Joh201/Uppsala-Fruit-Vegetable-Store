@@ -1,5 +1,5 @@
 from django.shortcuts import render
-# from django.contrib import messages
+from django.contrib import messages
 from .forms import ContactUsForm
 
 
@@ -11,6 +11,12 @@ def index(request):
 
 def contact_us(request):
     ''' A view to return the contact us page'''
+
+    if request.method == 'POST':
+        form = ContactUsForm(request.POST)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Thanks for your comments!')
 
     contact_form = ContactUsForm()
     context = {
