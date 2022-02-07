@@ -1,0 +1,1 @@
+web: gunicorn uppsala_store.wsgi:application
