@@ -314,13 +314,17 @@ input[name='q']::placeholder {
     }
 
     #mce-EMAIL{
-        background-color:rgb(223, 209, 209);
+        background-color:rgb(206, 200, 200);
         border-color: #fff;
 
     }
 
     #mc_embed_signup form {
         padding: 0;
+    }
+
+    #mc_embed_signup {
+        color:#fff !important;
     }
 
     .social{
