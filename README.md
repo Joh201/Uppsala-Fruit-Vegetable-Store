@@ -1,108 +1,72 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Uppsala Sotre
 
-Welcome Joh201,
+<p>
+Uppsala Store is an online fruit and vegetable store. This online store is owned by farmers in Uppsala and its surroundings. Uppsala Store enables the farmers to sell fresh and organic food to their customers in Sweden and neighbouring countries (Norway, Denmark and Finland). Through Uppsala Store farmers can easily reach, and meet the demands of their customers. The store also creates an opportunity for customers to get fresh and organic produce at their doorstep without any hassel. Thus, the website was developed to act as a bridge between producers and consumers. It runs on Code Institute's mock terminal on Heroku.
+</p>
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+[Here is the live version of my project](https://uppsala-store.herokuapp.com/)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+![weblook of the site](/static/readmefiles/websitelook.PNG)
 
-## Gitpod Reminders
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## User stories
 
-`python3 -m http.server`
+| User story ID                  | As a/an   | I want to be able to..                            | So that I can…                                                               |
+|--------------------------------|-----------|---------------------------------------------------|------------------------------------------------------------------------------|
+| Viewing and Navigation         |           |                                                   |                                                                              |
+| 1                              | Shopper   | View a list of produce                            | Buy some produce                                                             |
+| 2                              | Shopper   | View produce details                              | Determine the name and  price of a produce                                   |
+| 3                              | Shopper   | View produce by category                          | Easily find the produce I want to buy                                        |
+| Registration and User Accounts |           |                                                   |                                                                              |
+| 4                              | Site user | create an account                                 | Own an account  and view my personal profile                                 |
+| 5                              | Site user | login or logout                                   | Access my  account                                                           |
+| 6                              | Site user | Recover my password if I forget it                | Recover access to my account                                                 |
+| 7                              | Site user | Receive email confirmation                        | Confirm that my registration was successful                                  |
+| 8                              | Site user | Own a tailored user profile                       | See my order history and confirmation as well as save my payment information |
+| 9                              | Shopper   | Search for a produce by its name                  | Easily find the produce I want to buy                                        |
+| Purchasing and Checkout        |           |                                                   |                                                                              |
+| 10                             | Shopper   | Add produce to my cart                            | Buy the produce                                                              |
+| 11                             | Shopper   | Determine the quantity of a produce when shopping | Buy the right amount of each produce                                         |
+| 12                             | Shopper   | See the items in my shopping cart                 | Determine the total cost of my shopping and confirm the items I am buying    |
+| 13                             | Shopper   | Update the quantity of the produce in my cart     | Easily change the amount of produce I am buying                              |
+| 14                             | Shopper   | Enter my payment information                      | Checkout easily                                                              |
+| 15                             | Shopper   | Feel my personal  and payment information is safe | Checkout confidently                                                         |
+| 16                             | Shopper   | View order confirmation after checking out        | Ensure that I have bought the right produce                                  |
+| 17                             | Shopper   | Receive email confirmation after checkout         | Keep it as a record of my shoppings                                          |
 
-A blue button should appear to click: _Make Public_,
 
-Another blue button should appear to click: _Open Browser_.
+## Wire frame
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+![Wire frame1](/static/wireframe/wireframe1.png)
 
-A blue button should appear to click: _Make Public_,
+![Wire frame2](/static/wireframe/wireframe2.png)
 
-Another blue button should appear to click: _Open Browser_.
+![Wire frame3](/static/wireframe/wireframe3.png)
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+![Wire frame4](/static/wireframe/wireframe4.png)
 
-To log into the Heroku toolbelt CLI:
+![Wire frame5](/static/wireframe/wireframe5.png)
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+![Wire frame6](/static/wireframe/wireframe6.png)
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+![Wire frame7](/static/wireframe/wireframe7.png)
 
-------
+![Wire frame8](/static/wireframe/wireframe8.png)
 
-## Release History
+![Wire frame8](/static/wireframe/wireframme1.png)
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+![Wire framme1](/static/wireframe/wireframme1.png)
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+![Wire framme2](/static/wireframe/wireframme2.png)
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+![Wire framme3](/static/wireframe/wireframme3.png)
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+![Wire framme4](/static/wireframe/wireframme4.png)
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+![Wire framme5](/static/wireframe/wireframme5.png)
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+![Wire framme6](/static/wireframe/wireframme6.png)
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+![Wire framme7](/static/wireframe/wireframme7.png)
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+![Wire framme8](/static/wireframe/wireframme8.png)
