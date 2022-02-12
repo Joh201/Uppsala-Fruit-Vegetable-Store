@@ -120,5 +120,39 @@ Uppsala Store is an online fruit and vegetable store. This online store is owned
 
 ![Login page](/static/readmefiles/signin.PNG)
 
+### Store page
+
+* In this page the user can find all the available fruits and vegetables.
+* The user can also get information about the price of each produce.
+* The user can determine the quantity he/she wants to buy by clicking the quantity buttons (plus or minus).
+* The user can add produce to the cart by clicking the add to cart button.
+* When users add a produce to the cart they get a feedback in a pop window, which informs the users how many of each produce they have added and how much they need to spend to get free delivery.
+* At the bottom right corner of this page there is a button for going back to the top of the page which enables the user to easily navigate to the top of the page.
+
+![store page](/static/readmefiles/store.PNG)
+
+* The search field at the top allows users to search for a produce by its name.
+
+![search](/static/readmefiles/search.PNG)
+
+### Fruits page
+
+* In the fruits page the user can find all the available fruits in the store.
+* This page makes it easier for users to checkout what are the availabe fruits in the store.
+* This page together with the search bar improves users experience of the website.
+* The fruits page also contains the back to top button on its right botttom corner.
+
+![Fruits](/static/readmefiles/fruits.PNG)
+
+### Vegetables page
+
+* In the vegetables page the user can find all the available vegetables in the store.
+* It allows users to easily checkout the availabe vegetables in the store.
+* This page together with the search bar improves users experience of the website.
+* The fruits page also contains the back to top button on its right botttom corner.
+
+![Vegetables](/static/readmefiles/vegetables.PNG)
+
+
 
 
