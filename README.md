@@ -160,6 +160,7 @@ Uppsala Store is an online fruit and vegetable store. This online store is owned
 * The contact page also enables the site owners to have an insight into how customers feel about their services and products. Thus, allowing them to improve their service.
 * The contac us form contains required full name, email and comments field as well as optional phone number field.
 * Once users fill out the form, they can submit it with the submit button at the bottom of the page.
+* Users also get a feed back when they submit the form.
 
 ![Conact](/static/readmefiles/contact.PNG)
 
@@ -208,6 +209,79 @@ clicking the complete order button at the bottom of the page.
 * When users click on the order number they get redirected to order confirmation page.
 
 ![Profile](/static/readmefiles/profile.PNG)
+
+
+### Logout page
+* when the user tries to logout, the user is asked to confirm the sign out inorder to avoid accidental logouts.
+* When users logout, they get a feed back that they have sucessfully logged out.
+* It also contains a button to cancel the log out process and direct the user to the home page.
+
+![Profile](/static/readmefiles/signout.PNG)
+
+## Site owner section
+
+### Registered users
+
+* The site owner can see the list of registered customers in the admin panel of the website.
+* The owner of the site can delete registered users if it is needed.
+* The site owner can filter registered customers based on their status.
+
+![Users](/static/readmefiles/users.PNG)
+
+
+### Orders
+
+* The site owner can see the list of orders made by customers in the admin panel.
+* The owner of the site can see a list display of the order number, the date the order was made, full name of the customer, order total, delivery cost and grand total.
+* The orders are sorted by date with the latest order at the top of the list.
+* The site owner can see details of the order by clicking the order number.
+* The site owner can edit the details of the order or even delete it when necessary.
+
+![Order list](/static/readmefiles/order-list.PNG)
+
+
+![Order detail](/static/readmefiles/order-detail.PNG)
+
+### Produce
+
+* The site owner can see the list of produce in the admin panel.
+* The produce section of the admin panel shows the produce name, its category (fruit or vegetable), price and its image.
+* The site owner can edit details of the produce. For example change the price or remove the produce from the site when the produce is out of stock.
+* The site owner can also add a new produce to the site.
+
+![Produce](/static/readmefiles/produce.PNG)
+
+
+![Produce detail](/static/readmefiles/produce-detail.PNG)
+
+
+![Add produce](/static/readmefiles/add-produce.PNG)
+
+
+### Contact us
+
+* In this section of the admin panel the site owner can see a list of the comments or messages sent by customers.
+* The site owner can see the customer name, email, phone number (where applicable) and comments of customers.
+* The site owner can also see the details of the comments.
+
+![Comment](/static/readmefiles/comment.PNG)
+
+
+![Comment detail](/static/readmefiles/comment-detail.PNG)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
