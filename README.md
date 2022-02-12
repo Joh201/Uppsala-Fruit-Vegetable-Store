@@ -154,5 +154,19 @@ Uppsala Store is an online fruit and vegetable store. This online store is owned
 ![Vegetables](/static/readmefiles/vegetables.PNG)
 
 
+### Contact page
+
+* This page gives users the opportunity to leave comments or contact the site owners for any issues they want resolved.
+* The contact page also enables the site owners to have an insight into how customers feel about their services and products. Thus, allowing them to improve their service.
+* The contac us form contains required full name, email and comments field as well as optional phone number field.
+* once users fill out the form, they can submit it with the submit button at the bottom of the page.
+
+![Conact](/static/readmefiles/contact.PNG)
+
+
+
+
+
+
 
 
