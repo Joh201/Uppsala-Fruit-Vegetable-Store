@@ -102,7 +102,7 @@ Uppsala Store is an online fruit and vegetable store. This online store is owned
 * If a user tries to register with the same username or email, the user gets an appropriate message that the user or email already exists.
 * At the top of the sign up form there is a link for sign in if the user has ended up in the page by mistake, this helps the user to go to the login page directly.
 * The sign up form contains a sign up button which the user uses to submit the form as well as a back to login button which the user can use to go back to login page.
-* Upon signing up the user gets a feed back that they have successfully signed up.
+* Upon signing up users gets a feed back to verify their email to complete the sign up process, by responding and clicking a link sent to their registered email.
 
 ![Sign up page](/static/readmefiles/signup.PNG)
 
@@ -159,9 +159,36 @@ Uppsala Store is an online fruit and vegetable store. This online store is owned
 * This page gives users the opportunity to leave comments or contact the site owners for any issues they want resolved.
 * The contact page also enables the site owners to have an insight into how customers feel about their services and products. Thus, allowing them to improve their service.
 * The contac us form contains required full name, email and comments field as well as optional phone number field.
-* once users fill out the form, they can submit it with the submit button at the bottom of the page.
+* Once users fill out the form, they can submit it with the submit button at the bottom of the page.
 
 ![Conact](/static/readmefiles/contact.PNG)
+
+### Shopping cart page
+
+* This page provides users with a summary of the produce they have added to their cart.
+* The page displays the product name, price, quantity and subtotal for each produce.
+* It also gives users the ability to adjust the quanity (via the quantity buttons) of the produce they have added to the cart.
+* Users can use the update button to update the quantiy of their products or totally remove the produce from the cart by using the remove button.
+* At the bottom right corner of this page users get a summary of the cart total, delivery price if any, and the total amount they need to pay during checkout
+* It also contains butttons that allow the user to navigate to the checkout page or to continue shopping.
+
+![Cart](/static/readmefiles/cart.PNG)
+
+
+### Checkout page
+
+* The checkout page is the page where users fill out their delivery details as well as their card details in order to complete the purchase.
+* The users fill out their full name, email, telephone, street address, city, postal code and country. All of the fileds are required.
+* Users also fill out their card details which is handled by Stripe payment system.
+* If users are logged in they can save their details to their profile by checking the save my delivery information box, this helps users to avoid filling out their
+informatin when they shop another time. Thus, improving their experience during checkout.
+* In this page users also get a summary of the produce they are buying.
+* If users want to update their cart content, they can do so buy clicking the update cart button at the bottom of the page.
+
+![Checkout](/static/readmefiles/checkout.PNG)
+
+
+
 
 
 
