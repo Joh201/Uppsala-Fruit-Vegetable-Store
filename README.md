@@ -70,3 +70,55 @@ Uppsala Store is an online fruit and vegetable store. This online store is owned
 ![Wire framme7](/static/wireframe/wireframme7.png)
 
 ![Wire framme8](/static/wireframe/wireframme8.png)
+
+# Existing Features
+
+## User section
+
+### Home page
+
+* The home page welcomes the user to the website.
+* The top of the page contains the logo on the left corner,
+* The navigation menu and the search field in the midddle,
+* My account and cart on the left corner of the page
+* My account button allows the user to either register or login
+* Below the navigation menu it contains a banner that motivates customers to buy more
+* The Body of the home page also contains a button which takes the user to the store
+
+![Home page](/static/readmefiles/homepage.PNG)
+
+* The footer of the home page provides the customer with information about the facebook page (clickable) of the site as well as email subscription option so that the user can get offers
+* The footer also contains a link to privacy policy of the site, when users click the link they get directed to the privacy page
+
+![Homepage-footer](/static/readmefiles/homepage-footer.PNG)
+
+
+### Sign up page
+
+* This page contains a sign up form which allows the user to register inorder to create an account and view personal profile.
+* The user signs up by providing username, email and a password.
+* All of the fields are required for the user to sign up.
+* The user is also required to fill the email and password twice, and if it does not match the user gets appropriate information.
+* If a user tries to register with the same username or email, the user gets an appropriate message that the user or email already exists.
+* At the top of the sign up form there is a link for sign in if the user has ended up in the page by mistake, this helps the user to go to the login page directly.
+* The sign up form contains a sign up button which the user uses to submit the form as well as a back to login button which the user can use to go back to login page.
+* Upon signing up the user gets a feed back that they have successfully signed up.
+
+![Sign up page](/static/readmefiles/signup.PNG)
+
+
+### Login page
+
+* This page contains a sign in form which allows users to login to their account.
+* The user logs in  by providing username or email and password.
+* The username and password fields are required for the user to sign in.
+* If the user makes a mistake while signing in, the user gets a feed back that the username or password is incorrect.
+* At the top of the sign in form there is also a link for sign up page if the user has ended up in the page by mistake, upon clicking the link the user gets redirected to the sign up page.
+* At the bottom of the sign in form there is a sign in button which enables the user to login.
+* When users login, they get a feed back that they have successfully logged in.
+* The login page also contains a button to take the user to the home page as well as a button for password reset.
+
+![Login page](/static/readmefiles/signin.PNG)
+
+
+
