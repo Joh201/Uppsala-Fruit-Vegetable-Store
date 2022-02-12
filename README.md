@@ -270,6 +270,17 @@ clicking the complete order button at the bottom of the page.
 ![Comment detail](/static/readmefiles/comment-detail.PNG)
 
 
+## Future Features
+* When time allows I would like to include login with social account.
+* Give site owner a front end product management.
+
+## Database schema
+
+<p> The database schema includes six models. The UserProfile model has a one to one relationship with the User model created by django when a user registers to the site. It contains personal details of the user which can be used during checkout to automatically fill out the delivery details of the customer. The order model represents the order made by a customer(Userprofile) and thus a child of the Userprofile model. It contains the order number and delivery details of the customer as well as costs related to the order. The Produce model is the model for the produce in the store. It contains information about the produce such as name and price of produce. The Produce model is also a child of the catergory model which determines the category of every produce in the Produce model. The OrderLineItem model stands for an item with an order, since a shopping cart can contain many items (products) with a single order, it a child of the Order and Produce model. Thus, it connects the Order and the produce model. The contactUs model contains contact details of customers which the site owner can use to give feed back to customers comments.
+</p>
+
+![Database](/static/readmefiles/database-schema.png)
+
 
 
 
