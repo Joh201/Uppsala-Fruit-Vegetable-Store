@@ -184,8 +184,30 @@ Uppsala Store is an online fruit and vegetable store. This online store is owned
 informatin when they shop another time. Thus, improving their experience during checkout.
 * In this page users also get a summary of the produce they are buying.
 * If users want to update their cart content, they can do so buy clicking the update cart button at the bottom of the page.
+* Once users have filled out their delivery information, card details, and checked the produce they are buying, they can place their order by
+clicking the complete order button at the bottom of the page.
 
 ![Checkout](/static/readmefiles/checkout.PNG)
+
+
+### Order confirmation page
+
+* When users complete their order they are redirected to the order confirmation page.
+* In this page users get information that a confirmation email of their order is sent to their email.
+* They also get a summary of their order number, the date the order was made, the order details, delivery and billing information.
+* At the bottom of this page there is a back to store button that allows the user to go to the store if the user want to continue shopping.
+
+![Order](/static/readmefiles/order.PNG)
+
+
+### The profile page
+
+* In the profile page users can see their profile and they can udpate their profile information by clicking the update information button.
+* The profile page is created automatically when logged in users choose to save their delivery information while completing their order.
+* This page also contains the user's order history which helps the user to keep a record of their orders.
+* When users click on the order number they get redirected to order confirmation page.
+
+![Profile](/static/readmefiles/profile.PNG)
 
 
 
