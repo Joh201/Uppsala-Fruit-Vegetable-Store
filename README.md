@@ -281,6 +281,32 @@ clicking the complete order button at the bottom of the page.
 
 ![Database](/static/readmefiles/database-schema.png)
 
+## Testing
+
+* I have manually tested the following:
+* The website works on different browsers: Chrome, Microsoft Edge, Firefox.
+* The website is responsive and works on the standard screen sizes of the devtools device toolbar.
+* The above mentioned features work as expected.
+* I have also tested on gitpod and Code Institute's Heroku Terminal.
+
+## Validator Testing
+
+<li>HTML
+  <ul>
+  <li> A few warnings and one minor were detected when passing through the official (W3C) validator.</li>
+  </ul>
+</li>
+
+   [Html](https://validator.w3.org/nu/?doc=https%3A%2F%2Fuppsala-store.herokuapp.com%2F)
+
+
+  <li>CSS
+   <ul>
+   <li> No error was detected when passing through the official (Jigsaw) validator. </li>
+   </ul>
+
+
+
 
 
 
