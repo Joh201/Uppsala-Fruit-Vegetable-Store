@@ -393,6 +393,12 @@ clicking the complete order button at the bottom of the page.
  6. Add stripe keys to Heroku Config Vars.
  7. Create a new webook endpoint for Heroku and add webhook signing secret in Heroku Config Vars
 
+## Credits
+* Code institute for the deployment process and deployment terminal.
+* For converting pdf file to markdown: (https://pdf2md.morethan.io/)
+* Creating markdown for user stories: (https://thisdavej.com/copy-table-in-excel-and-paste-as-a-markdown-table/)
+*  Source for images: (https://www.istockphoto.com/se)
+* Multi device website  Mockup generator: (http://techsini.com/multi-mockup/index.php)
 
 
 
