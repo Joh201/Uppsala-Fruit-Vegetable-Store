@@ -6,7 +6,6 @@ from .models import UserProfile
 from .forms import UserProfileForm
 
 
-
 def profile(request):
 
     ''' Shows the user's profile'''

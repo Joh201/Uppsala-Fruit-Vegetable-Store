@@ -2,6 +2,7 @@ from django.db import models
 
 
 class Category(models.Model):
+    ''' category for the produce'''
     class Meta:
         ''' Helper class'''
         verbose_name_plural = 'categories'

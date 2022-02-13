@@ -4,7 +4,9 @@ from .models import Order
 
 
 class OrderForm(forms.ModelForm):
+    ''' Order form'''
     class Meta:
+        ''' Helper class'''
         model = Order
         fields = ('full_name', 'email', 'phone_number',
                   'street_address', 'town_or_city', 'postcode', 'country',)

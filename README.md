@@ -290,7 +290,7 @@ clicking the complete order button at the bottom of the page.
 * I have also tested on gitpod and Code Institute's Heroku Terminal.
 
 ## Validator Testing
-
+<ul>
 <li>HTML
   <ul>
   <li> A few warnings and one minor were detected when passing through the official (W3C) validator.</li>
@@ -304,6 +304,22 @@ clicking the complete order button at the bottom of the page.
    <ul>
    <li> No error was detected when passing through the official (Jigsaw) validator. </li>
    </ul>
+   </li>
+
+  <li> Python code
+  <ul>
+  <li> A few errors (line too long) were detected when passing through the official (PEP8) validator. However, these errors
+       can not be fixed without affeting the functionality of code. </li>
+  </ul>
+</li>
+
+ <li> Javascript code
+  <ul>
+  <li> No errors were detected when passing through the official (JSHint) validator. However, there were a few warnings.</li>
+  </ul>
+</li>
+
+</ul>
 
 
 ## Accessibility
@@ -397,7 +413,7 @@ clicking the complete order button at the bottom of the page.
 * Code institute for the deployment process and deployment terminal.
 * For converting pdf file to markdown: (https://pdf2md.morethan.io/)
 * Creating markdown for user stories: (https://thisdavej.com/copy-table-in-excel-and-paste-as-a-markdown-table/)
-*  Source for images: (https://www.istockphoto.com/se)
+* Source for images: (https://www.istockphoto.com/se)
 * Multi device website  Mockup generator: (http://techsini.com/multi-mockup/index.php)
 
 

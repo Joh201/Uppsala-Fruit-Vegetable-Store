@@ -3,6 +3,7 @@ from .models import Produce, Category
 
 
 class ProduceAdmin(admin.ModelAdmin):
+    ''' produce admin'''
     list_display = (
         'name',
         'category',
@@ -14,6 +15,7 @@ class ProduceAdmin(admin.ModelAdmin):
 
 
 class CategoryAdmin(admin.ModelAdmin):
+    '''category admin'''
     list_display = ('name',)
 
 
