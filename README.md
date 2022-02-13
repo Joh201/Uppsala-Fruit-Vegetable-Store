@@ -306,6 +306,98 @@ clicking the complete order button at the bottom of the page.
    </ul>
 
 
+## Accessibility
+
+<ul>
+  <li> The acessibility was tested using lighthouse in the devtools.</li>
+  </ul>
+
+
+### Home page accessibility
+
+![Home page accessibility](/static/readmefiles/home-access.PNG)
+
+### Store, fruits and vegetables page accessibility
+
+![Products page accessibility](/static/readmefiles/product-access.PNG)
+
+### Shopping cart page accessibility
+
+![Shopping page accessibility](/static/readmefiles/cart-access.PNG)
+
+
+### Checkout page accessibility
+
+![Check out page accessibility](/static/readmefiles/checkout-access.PNG)
+
+
+## Bugs
+
+### Solved Bugs
+
+* No bugs were detected
+
+### Remaining Bugs
+* There are no remaining bugs.
+
+
+# Deployment
+* The project was deployed using Code Institute's Heroku mock terminal.
+* Create Heroku app
+* The following steps were followed during deployment:
+
+## Deployment to Heroku
+1. Install dj_database_url  and psycogpg2-binary (with pip3 install) and freeze to requirements.txt
+2. Import dj_database_url to settings.py of your project.
+3. Create Heroku postgres database from resources.
+3. Temporarily comment out default database in settings and  replace with postgres database url from Heroku settings.
+4. Run migrations to postgres database. Check migrations with python3 manage.py showmigrations and finally run migrate.
+5.  Load products to the new database with fixtures or manually with the following steps:
+   * i. Make sure your manage.py file is connected to your mysql database
+   * ii. Use this command to backup your current database and load it into a db.json file:
+    ./manage.py dumpdata --exclude auth.permission --exclude contenttypes > db.json
+   *  iii. Connect your manage.py file to your postgres database
+   * iv. Then use this command to load your data from the db.json file into postgres:
+    ./manage.py loaddata db.json
+6. Create superuser in the new database(postgres) with python3 manage.py createsuperuser
+7. Run python3 manage.py runserver to check your website is working.
+8. Uncomment default database configuaration to prevent Heroku database ending in version control.
+9. Add Heroku databse to settings.py with an if statment to tell django when to use default settings.
+10. Install gunicorn
+10. Create Profile in the root directory and add gunicorn to it.
+11. Disable Collectstatic in Heroku config Vars.
+12. Add hostname of Heroku app and local host to allowed hosts in settings.py
+13. Finally deploy app from web or CLI.
+14. Get a new secret key for Heroku app, and a for gitpod and add it to environment variables.
+
+## Creating S3 bucket for media and static files storage
+1. Create an account at aws.amazon.com
+2. Create S3 bucket with public access and set a few basic settings:
+  * i. In properties: turn on static web hosting
+  * ii. In permissions: set up CORS configuaration
+  * iii. In bucket policy: generate policy
+  * iv. In access control list: public access
+3. Once the bucket is created. Create a user to access it with  Iam (Identity and access management).
+
+### In Iam
+ 1. Create a group for the user.
+ 2. Create access policy to give the group access to S3 bucket.
+ 3. Create the user, and add user to the group so that the user can use group policy to access all files in S3 bucket.
+
+ ### Connecting Django to S3
+ 1. Install boto3 and django-storages. Add storages to django apps in settings.py
+ 2. Add bucket configuarations to settiings.py and remove disable collectstatic from Heroku.
+ 3. Create custom_storage.py in root directory with classes for static and media storage.
+ 4. Add the classes in custom_storage.py to settings.py under static and media files.
+ 5. In S3 bucket create media and static folder that grants the pubic read-access and then upload the files.
+ 6. Add stripe keys to Heroku Config Vars.
+ 7. Create a new webook endpoint for Heroku and add webhook signing secret in Heroku Config Vars
+
+
+
+
+
+
 
 
 
